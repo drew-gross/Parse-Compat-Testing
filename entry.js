@@ -29,7 +29,7 @@ class LoginButton extends React.Component {
 					user.signUp()
 				}}
 			>
-				Login
+				Login!
 			</button>
 		</div>
 	}
@@ -42,9 +42,7 @@ let LogoutButton = ({ onLogout }) => <button
 class CompatApp extends React.Component {
 	constructor() {
 		super();
-		this.state = {
-
-		}
+		this.state = {}
 	}
 
 	render() {
@@ -56,14 +54,8 @@ class CompatApp extends React.Component {
 	}
 }
 
-var hitParseCom = true;
-Parse.initialize("dThScpTAst1imdlIFtdAb0CzCUVFfN5QjYMmRz4L", "cT4yojEkhdBBJCBF4LUhxSrtMLDFsNkzuAAxUoxv");
-Parse.serverURL = 'http://localhost:3000/1'
-Parse.serverURL = 'http://localhost:1337/parse'
-if (hitParseCom) {
-	Parse.initialize('X0XkawM50PCgT89l1zvTcPtbzx0UDGvHmMQB8XZ2', 'OTultb2CmAnC62twLa475BALg523FEIYos3nJvfY');
-	Parse.serverURL = 'https://api.parse.com/1';
-}
+Parse.initialize("appId", "");
+Parse.serverURL = 'http://localhost:5051/parse'
 ReactDOM.render(
   <CompatApp />,
   document.getElementById('react')
