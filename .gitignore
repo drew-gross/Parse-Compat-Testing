@@ -1,2 +1,4 @@
 node_modules/
+parse-server
+parse-dashboard
 bundle.js

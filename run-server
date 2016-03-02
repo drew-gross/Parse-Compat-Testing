@@ -1,0 +1,1 @@
+cd parse-server && ./node_modules/.bin/babel --watch src/ -d lib/

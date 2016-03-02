@@ -1,0 +1,1 @@
+cd ./parse-dashboard && PORT=5052 nodemon ./Parse-Dashboard/index.js

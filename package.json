@@ -3,9 +3,10 @@
     "express": "^4.13.4",
     "immutable": "^3.7.6",
     "lodash": "^3.10.1",
-    "parse-server": "^2.1.3"
+    "parse-server": "file:./parse-server"
   },
   "devDependencies": {
+    "http-server": "^0.9.0",
     "node-sass": "^3.4.2",
     "nodemon": "^1.9.1",
     "parallelshell": "^2.0.0",
@@ -13,6 +14,6 @@
     "webpack": "^1.12.9"
   },
   "scripts": {
-    "start": "parallelshell \"python -m SimpleHTTPServer 5050\" \"webpack --watch --progress --colors\" \"nodemon index.js\""
+    "start": "parallelshell \"http-server -p 5050\" \"webpack --watch --progress --colors\" \"nodemon index.js\" \"./run-server\" \"./run-dashboard-server\" \"./run-dashboard-watcher\""
   }
 }
