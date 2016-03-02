@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "immutable": "^3.7.6",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "webpack": "^1.12.9"
+  },
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 5050"
+  }
+}

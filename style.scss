@@ -1,0 +1,15 @@
+.friendName {
+	width: 350px;
+	border-width: 1px;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: lightgrey;
+	margin: 5px;
+	padding: 5px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
