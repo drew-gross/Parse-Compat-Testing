@@ -1,1 +1,1 @@
-cd ./parse-dashboard && webpack --config dashboard.config.js --progress --watch --colors
+cd ./parse-dashboard && webpack --config build.config.js --progress --watch --colors
